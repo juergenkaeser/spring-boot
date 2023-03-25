@@ -1,4 +1,4 @@
-package de.juristan.springcoredemo;
+package de.juristan.springcoredemo.common;
 
 public interface Coach {
 

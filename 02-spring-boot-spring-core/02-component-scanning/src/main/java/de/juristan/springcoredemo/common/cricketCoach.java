@@ -1,4 +1,4 @@
-package de.juristan.springcoredemo;
+package de.juristan.springcoredemo.common;
 
 import org.springframework.stereotype.Component;
 

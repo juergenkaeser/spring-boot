@@ -11,6 +11,6 @@ public class SwimCoach implements Coach {
 
     @Override
     public String getDailyWorkout() {
-        return "Swim 1000 meters as a warmup";
+        return "Swim 1000 meters as a warmup!";
     }
 }

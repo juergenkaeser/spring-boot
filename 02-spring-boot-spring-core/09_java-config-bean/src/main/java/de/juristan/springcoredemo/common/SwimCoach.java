@@ -1,8 +1,5 @@
 package de.juristan.springcoredemo.common;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
 public class SwimCoach implements Coach {
 
     public SwimCoach() {

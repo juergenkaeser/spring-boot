@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Juristan Corp. Home Page</title>
@@ -8,5 +8,15 @@
     <h2>Juristan Corp. Home Page</h2>
     <hr>
     Welcome to the Juristan Corp. company home page!
+    <hr>
+
+    <form action="" th:action="@{/logout}" method="POST">
+        <!-- Logout/Submit Button -->
+        <div style="margin-top: 10px;" class="form-group">
+            <div class="col-sm-6 controls">
+                <button type="submit" class="btn btn-success">Logout</button>
+            </div>
+        </div>
+    </form>
 </body>
 </html>

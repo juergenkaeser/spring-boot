@@ -15,19 +15,19 @@
     </p>
 
     <hr>
-        <p>
-            User: <span sec:authentication="principal.username"></span>
-            <br>
-            Role(s): <span sec:authentication="principal.authorities"></span>
-        </p>
-    <hr>
 
     <p>
+        User: <span sec:authentication="principal.username"></span>
+        <br>
+        Role(s): <span sec:authentication="principal.authorities"></span>
+    </p>
+
+    <p sec:authorize="hasRole('MANAGER')">
         <a th:href="@{/leaders}">Leadership Meeting</a>
         (Only for Managers)
     </p>
 
-    <p>
+    <p sec:authorize="hasRole('ADMIN')">
         <a th:href="@{/systems}">Systems Page</a>
         (Only for Admins)
     </p>
